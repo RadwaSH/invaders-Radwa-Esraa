@@ -1,0 +1,40 @@
+﻿ body
+{
+    background-image:url("images/pgbg.jpg");
+    background-attachment:fixed;    /*not affected by scrolling the page. whenever you scroll, just certain area of the background will appear and fixed*/
+    margin: 5px auto;      /*The CSS margin properties define the space around elements. y then x=auto=0*/
+    width:830px;
+    background-color: Black;  /*will not be shown because of the background*/
+}
+/*the outer frame of the game*/
+#outerDiv 
+{
+    /*position: relative;*/
+    z-index:1;          /*The z-index property specifies the stack order of an element.
+                        /*An element with greater stack order is always in front of an element with a lower stack order.*/
+						/*Note: z-index only works on positioned elements (position:absolute, position:relative, or position:fixed).*/
+    padding: 1px;       /*he padding clears an area around the content (inside the border) of an element.*/
+	                    /* The padding is affected by the background color of the element which is Gray here.*/
+	border:0px none grey;
+	background-color: Gray;
+    border-radius: 10px;   /*allows us to easily utilise rounder corners*/                
+    border-style:solid;    /*can be dotted, dashed, double, groove,....etc*/
+	border-color:#F2F2F2;
+	border-bottom-color:#C7C7C7;
+	border-right-color:#C7C7C7;
+	border-width:1px;
+    position:absolute;          
+}
+/*the inner frame of the game*/
+#innerDiv 
+{
+    z-index:1;
+    border-radius: 10px;                
+    padding:10px;
+    background-color:Black;    
+    border-style:solid;
+	border-color:#F2F2F2;
+	border-top-color:#C7C7C7;
+	border-left-color:#C7C7C7;
+	border-width:1px;                
+}
